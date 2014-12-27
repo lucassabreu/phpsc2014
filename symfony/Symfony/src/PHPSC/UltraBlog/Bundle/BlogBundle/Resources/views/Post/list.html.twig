@@ -1,0 +1,18 @@
+<h1>Post list</h1>
+
+{% for flashMessage in app.session.flashbag.get('notice') %}
+    <div class="flash-notice">
+        {{ flashMessage }}
+    </div>
+{% endfor %}
+
+<a href="{{ url('phpsc_ultra_blog_post_new') }}">Create new post</a>
+<div class="posts">
+    {% for post in posts %}
+        <article>
+            <h2><a href="{{ url('phpsc_ultra_blog_post_show', { 'id' : post.id }) }}">{{ post.title }}</a></h2>
+            <p>{{ post.content }}</p>
+            <a href="{{ url('phpsc_ultra_blog_post_delete', { 'id' : post.id }) }}">Delete</a>
+        </article>
+    {% endfor %}
+</div>

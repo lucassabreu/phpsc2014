@@ -1,0 +1,7 @@
+post.form.title: Título
+post.form.content: Conteúdo
+post.form.createdAt: Criado Em
+post.form.submit: Enviar
+post.form.success: Post criado com sucesso
+post.does_not_exist: Post não existe
+post.delete_succefully: Post removido com sucesso

@@ -1,0 +1,14 @@
+<h1>New Post</h1>
+
+{% for flashMessage in app.session.flashbag.get('notice') %}
+    <div class="flash-notice">
+        {{ flashMessage }}
+    </div>
+{% endfor %}
+<div class="form_row">
+    <!--
+    <span class="label">{ form_label(form.title) }}</span>
+    <span class="widget">{ form_widget(form.title) }}</span>
+    -->
+    {{ form(form) }}
+</div>

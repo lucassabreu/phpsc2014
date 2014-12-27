@@ -1,0 +1,4 @@
+phpsc_ultra_blog:
+    resource: "@PHPSCUltraBlogBundle/Resources/config/routing.xml"
+    prefix:   /
+

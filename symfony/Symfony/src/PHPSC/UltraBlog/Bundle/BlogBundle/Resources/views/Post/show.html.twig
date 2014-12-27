@@ -1,0 +1,7 @@
+<h1>{{ post.title }}</h1>
+<span>{{ post.createdAt|date('d/m/Y') }}</span>
+<div class="content">
+    {{ post.content }}
+</div>
+
+<a href="{{ url('phpsc_ultra_blog_post_list') }}"><< Voltar</a>

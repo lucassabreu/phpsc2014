@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="phpsc_ultra_blog_post_list" path="/">
+        <default key="_controller">PHPSCUltraBlogBundle:Post:list</default>
+    </route>
+    
+    <route id="phpsc_ultra_blog_post_show" path="/{id}">
+        <default key="_controller">PHPSCUltraBlogBundle:Post:show</default>
+        <requirement key="id">\d+</requirement>
+    </route>
+    
+    <route id="phpsc_ultra_blog_post_new" path="/new" methods="GET,POST">
+        <default key="_controller">PHPSCUltraBlogBundle:Post:new</default>
+    </route>
+    
+    <route id="phpsc_ultra_blog_post_delete" path="/delete/{id}">
+        <default key="_controller">PHPSCUltraBlogBundle:Post:delete</default>
+        <requirement key="id">\d+</requirement>
+    </route>
+</routes>
